@@ -13,7 +13,6 @@ body:
 
   # DATOS DO SOLICITANTE.
   - type: markdown
-    id: datos_solicitante
     attributes:
       value: "### 1. Datos do solicitante"
 
@@ -22,12 +21,10 @@ body:
     attributes: 
       label: Nome completo
       placeholder: Ex. Juan Pérez Rodríguez
-    validations:
       required: true  # Campo obligatorio. 
 
   - type: markdown  # Campo non modificable: rol.
-    id: rol_solicitante
-    attributes: 
+  attributes: 
       value: "Rol: Analista"
   
   - type: input # Campo de texto normal: correo electrónico.
@@ -35,7 +32,6 @@ body:
     attributes: 
       label: Correo electrónico
       placeholder: Ex. juanprodriguez@gmail.com
-    validations:
       required: true 
 
   - type: input # Campo de texto normal: teléfono de contacto.
@@ -46,7 +42,6 @@ body:
 
   # DESCRICIÓN E XUSTIFICACIÓN DO CAMBIO.
   - type: markdown
-    id: descricion_xustificacion_cambio
     attributes:
       value: "### 2. Descrición e Xustificacion do cambio"
   
@@ -56,7 +51,6 @@ body:
       label: Descrición detallada do cambio proposto
       description: "Describe de forma clara e detallada o cambio que se pretende implementar. Indica que funcionalidades, procesos, regras ou características do sistema se engaden, modifican ou melloran."
       placeholder: "Ex. O sistema deberá ser fácil de entender, garantindo que os usuarios comprenden a finalidade de cada opción, mensaxe e fluxo sen necesidade de formación externa. Necesitarase presentar unha interface clara e coherente, ademais de evitar ambigüidades."
-    validations:
       required: true
   
   - type: textarea  # Alcance do cambio.
@@ -65,7 +59,6 @@ body:
       label: Alcance do cambio
       description: "Indica que sistemas, módulos, procesos ou departamentos se verán afectados polo cambio e, se procede, que elementos quedan fóra do seu alcance."
       placeholder: "Ex. O cambio aplicarase á interface de usuario do sistema, incluíndo os formularios de rexistro e edición de datos, os menús de navegación, as mensaxes informativas e de erro, así como os fluxos principais de operación. Non inclúe cambios na lóxica do sistema nin nos algoritmos de procesamento de datos."
-    validations:
       required: true
 
   - type: dropdown
@@ -81,18 +74,12 @@ body:
         - Cumprimento normativo ou legal (leis, auditorías, RGPD, etc.)
         - Seguridade / Xestión de riscos (riscos, vulnerabilidades)
         - Outro
-      validations:
         required: true
   - type: input
     id: tipo_cambio_outro
     attributes:
       label: Especifica outro tipo de cambio
       description: "Se seleccionaches 'Outro', describe aquí a categoría do cambio."
-    validations:
-      required: true
-    conditional:
-      - field: tipo_cambio
-        value: "Outro"
 
   - type: textarea  # Xustificación do cambio proposto.
     id: xustificacion_cambio 
@@ -100,7 +87,6 @@ body:
       label: Motivación e obxectivo do cambio
       description: "Responde que se pretende conseguir co cambio e por que é necesaria a súa aplicación."
       placeholder: "Ex. Mellorar a usabilidade do sistema para que os usuarios poidan comprender facilmente as opcións dispoñibles e completar os fluxos de traballo sen necesidade de formación adicional. Isto permitirá reducir erros de uso e aumentar a eficiencia na realización das tarefas."
-    validations:
       required: true
 
   - type: dropdown  # Importancia do cambio proposto.
@@ -113,7 +99,6 @@ body:
         - "Media (cambio relevante, pero non crítico para operacións)"
         - "Alta (cambio importante que afecta procesos clave ou múltiples usuarios)"
         - "Crítica (cambio urxente, debe implementarse canto antes)"
-    validations: 
       required: true
  
 
@@ -135,7 +120,6 @@ body:
       label: Descrición técnica da solución
       description: "Arquitectura/Modificación prevista, tecnoloxías implicadas, cambios en procesos ou sistemas"
       placeholder: "Ex.\n- Nova arquitectura cliente-servidor\n- Actualización da base de datos a PostgreSQL 15\n "
-    validations:
       required: false 
   - type: textarea
     id: analise_compatibilidade
@@ -143,7 +127,6 @@ body:
       label: Análise de compatibilidade 
       description: "Impacto sobre sistemas existentes, dependencias técnicas, necesidade de actualizacións."
       placeholder: "Ex.\n- Sistema ERP compatible coa nova versión\n- Necesidade de actualizar drivers ou librerías\n"
-    validations:
       required: false 
   - type: dropdown  # Complexidade
     id: complexidade_tecnica
@@ -155,7 +138,6 @@ body:
         - "Media"
         - "Alta"
         - "Moi alta"
-    validations: 
       required: false
 
   ## CUSTOS E RECURSOS
@@ -164,7 +146,6 @@ body:
       value:"## Análise de custos e recursos" 
   # RECURSOS HUMANOS NECESARIOS.
   - type: markdown
-    id: recursos_humanos
     attributes:
       value: "### 1. Recursos Humanos necesarios"
   - type: textarea
@@ -173,24 +154,20 @@ body:
       label: Perfís implicados
       description: Indica os roles ou perfís dos empregados que se verán afectados polo cambio ou que deberán participar na súa implementación
       placeholder: "Ex.\n- 2 Analistas de datos"
-    validations:
       required: false 
   # RECURSOS TÉCNICOS
   - type: markdown
-    id: recursos_tecnicos
     attributes:
       value: "### 2. Recursos Técnicos"
   - type: textarea
-    id: 
+    id: recursos_tecnicos_necesarios
     attributes: 
       label: Recursos técnicos necesarios
       description: "Indica os recursos técnicos necesarios para implementar o cambio, como infraestrutura, ferramentas, licenzas ou sistemas implicados"
       placeholder: "Ex.\n- Servidor de base de datos adicional\n -Licenza do ERP XYZ"
-    validations:
       required: false    
   # ESTIMACIÓN ECONÓMICA
   - type: markdown
-    id: estimacion_economica
     attributes:
       value: "### 3. Estimación económica"
   - type: input # Campo de texto normal: estimación económica
@@ -198,11 +175,9 @@ body:
     attributes: 
       label: Custo total estimado
       placeholder: Ex. 2500 euros
-    validations:
       required: false 
 # IMPACTO EN PRAZOS
   - type: markdown
-    id: impacto_pazos
     attributes:
       value: "### 4. Impacto en prazos"
   - type: input # Campo de texto normal: duración estimada
@@ -210,9 +185,8 @@ body:
     attributes: 
       label: Duración estimada
       placeholder: Ex. 15 días
-    validations:
       required: false 
-  - type: radio
+  - type: dropdown
     id: confirmacion_duracion
     attributes:
       label: "Afecta á planificación actual?"
@@ -230,7 +204,6 @@ body:
       label: Riscos identificados
       description: "Describe os riscos asociados ao cambio. Indica cal é o risco, a súa probabilidade, impacto e medidas preventivas"
       placeholder: "\nRISC XXX\nNome: \nDescrición: \nProbabilidade: \nImpacto: \nNivel de risco: \nMedidas preventivas: \n"
-    validations:
       required: false
 
 
@@ -250,28 +223,24 @@ body:
     attributes: 
       label: Data de inicio estimada
       placeholder: "2025-02-27"
-    validations:
       required: false 
   - type: input # Campo de texto normal: data de fin.
     id: data_fin
     attributes: 
       label: Data de fin estimada
       placeholder: "2025-02-28"
-    validations:
       required: false 
   - type: input # Campo de texto normal: custo estimado.
     id: custo_estimado
     attributes: 
       label: Custo estimado
       placeholder: 2500 euros
-    validations:
       required: false
   - type: input # Campo de texto normal: horas de traballo
     id: horas_traballo
     attributes: 
       label: Horas de traballo estimadas
       placeholder: 15 horas
-    validations:
       required: false  
 
   # OBXECTIVOS DA PLANIFICACIÓN
@@ -283,7 +252,6 @@ body:
       label: Resultados esperados
       description: "Describe os resultados que se esperan obter tras a planificación e implementación do cambio."
       placeholder: "Ex.\n- Todas as tarefas pendentes reasignadas correctamente\n- Notificacións automáticas enviadas aos responsables\n- Disminución de incidencias operativas"
-    validations:
       required: false
 
   # DESCOMPOSICIÓN EN TAREFAS
@@ -296,7 +264,6 @@ body:
       label: Descomposición en tarefas
       description: "Lista as tarefas concretas necesarias para implementar o cambio."
       placeholder: "Ex.\n- Tarefa 1: Reasignación automática de rutas (Responsable: Xestor de rutas)\n- Tarefa 2: Actualización do módulo de xestión de empregados (Responsable: Técnico de sistemas)"
-    validations:
       required: false  
 
 
@@ -317,7 +284,6 @@ body:
       label: Accións, medidas e dificultades
       description: "Indica as accións que se realizarán para implementar o cambio, as medidas adoptadas e calquera dificultade prevista"
       placeholder: "Ex.\n- Tarefa 1: Reasignación automática de rutas\n  Medidas: Configuración do módulo de xestión de empregados\n  Dificultades: Posibles conflitos con tarefas pendentes\n  Responsable: Técnico de sistemas\n"
-    validations:
       required: false  
       
   - type: markdown
@@ -329,7 +295,6 @@ body:
     attributes: 
       label: Data real de inicio 
       placeholder: "2025-02-27"
-    validations:
       required: false 
 
   - type: input # Campo de texto normal: data de inicio.
@@ -337,7 +302,6 @@ body:
     attributes: 
       label: Data real de fin 
       placeholder: "2025-03-01"
-    validations:
       required: false 
 
   - type: input # Campo de texto normal: data de inicio.
@@ -345,7 +309,6 @@ body:
     attributes: 
       label: Horas realmente empregadas 
       placeholder: 25 h
-    validations:
       required: false 
 
   - type: textarea  
@@ -354,7 +317,6 @@ body:
       label: Recursos empregados efectivamente
       description: "Enumera o conxunto de recursos empregados durante a implementación"
       placeholder: " Recurso 1 \n Recurso 2 \n Recurso 3 \n ..."
-    validations:
       required: false
 
   - type: input # Campo de texto normal: data de inicio.
@@ -362,7 +324,6 @@ body:
     attributes: 
       label: Custo 
       placeholder: 1200 €
-    validations:
       required: false 
 
 ##### 
@@ -383,7 +344,6 @@ body:
       label: Probas realizadas
       description: "Describe as probas realizadas para verificar a implementación."
       placeholder: "Ex.\n- Tarefa 1: Proba de carga do módulo de xestión de rutas\n"
-    validations:
       required: false
 
   # ERROS E DESVIACIONS
@@ -397,7 +357,6 @@ body:
       label: Erros identificados
       description: "Describe os erros ou desviacións atopadas durante a implementación. Indica cal é o erro, unha descrición, o grao de impacto, a decisión e o estado."
       placeholder: "Ex.\n- Tarefa: Reasignación de rutas\n  Erro: As rutas non se reasignaron correctamente\n  Grao de impacto: Medio\n  Decisión: Acción correctiva\n  Estado: Completado"
-    validations:
       required: false
 
   # CONCLUSIÓN DA REVISIÓN
@@ -416,7 +375,6 @@ body:
       label: Observacións finais
       description: "Este campo permite incluír calquera comentario adicional relevante que non quedase reflectido nos apartados anteriores."
       placeholder: "Describa detalladamente os comentarios finais"
-    validations:
       required: false
   
 ##### 
@@ -437,6 +395,7 @@ body:
         - label: "A execución cumpre cos requisitos definidos"
         - label: "O problema ou necesidade inicial queda resolto"
         - label: "Interesados notificados do peche da solicitude"
+
 
 
 
