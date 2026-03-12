@@ -105,7 +105,7 @@ body:
 # 2. Avaliación da solicitude.
   - type: markdown
     attributes:
-      value:"# 2️⃣ AVALIACIÓN DA SOLICITUDE"   
+      value:"# 2. AVALIACIÓN DA SOLICITUDE"   
   
   - type: markdown
     attributes:
@@ -207,7 +207,7 @@ body:
 # 3. Planificación do cambio.
   - type: markdown
     attributes:
-      value:"# 3️⃣ PLANIFICACIÓN DO CAMBIO" 
+      value:"# 3. PLANIFICACIÓN DO CAMBIO" 
 
   # RESUMO DA PLANIFICACIÓN
   - type: markdown
@@ -265,7 +265,7 @@ body:
 # 4. Implementación do cambio.
   - type: markdown
     attributes:
-      value:"# 4️⃣ IMPLEMENTACIÓN DO CAMBIO" 
+      value:"# 4. IMPLEMENTACIÓN DO CAMBIO" 
 
     # DESCRICIÓN DA IMPLEMENTACIÓN 
   - type: markdown
@@ -322,7 +322,7 @@ body:
 # 5. Revisión da implementación.
   - type: markdown
     attributes:
-      value:"# 5️⃣ REVISIÓN DA IMPLEMENTACIÓN"
+      value:"# 5. REVISIÓN DA IMPLEMENTACIÓN"
 
   # DATOS DAS PROBAS
   - type: markdown
@@ -371,7 +371,7 @@ body:
 # 6. Peche da solicitude.
   - type: markdown
     attributes:
-      value:"# 6️⃣ PECHE DA SOLICITUDE"            
+      value:"# 6. PECHE DA SOLICITUDE"            
 
   - type: checkboxes
     id: peche_cambio
@@ -384,3 +384,4 @@ body:
         - label: "A execución cumpre cos requisitos definidos"
         - label: "O problema ou necesidade inicial queda resolto"
         - label: "Interesados notificados do peche da solicitude"
+
