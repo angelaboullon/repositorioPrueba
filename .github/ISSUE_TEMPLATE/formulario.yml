@@ -54,7 +54,7 @@ body:
       label: Alcance do cambio
       description: "Indica que sistemas, módulos, procesos ou departamentos se verán afectados polo cambio e, se procede, que elementos quedan fóra do seu alcance."
       placeholder: "Ex. O cambio aplicarase á interface de usuario do sistema, incluíndo os formularios de rexistro e edición de datos, os menús de navegación, as mensaxes informativas e de erro, así como os fluxos principais de operación. Non inclúe cambios na lóxica do sistema nin nos algoritmos de procesamento de datos."
-  
+
 
   - type: dropdown
     id: tipo_cambio
@@ -352,8 +352,9 @@ body:
     attributes:
       value:  "### 3. Conclusión da Revisión" 
   - type: checkboxes
-    id: aceptar_validación
+    id: aceptar_validacion
     attributes:
+      label: Validación final
       options:
         - label: "A tarefa pode considerarse validada"
   
@@ -380,6 +381,7 @@ body:
         - label: "A execución cumpre cos requisitos definidos"
         - label: "O problema ou necesidade inicial queda resolto"
         - label: "Interesados notificados do peche da solicitude"
+
 
 
 
