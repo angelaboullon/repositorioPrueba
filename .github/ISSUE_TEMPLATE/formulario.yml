@@ -7,12 +7,12 @@ body:
   # 1. Rexistro da solicitude.
   - type: markdown
     attributes:
-      value:"# REXISTRO DA SOLICITUDE"
+      value: "# REXISTRO DA SOLICITUDE"
 
   # DATOS DO SOLICITANTE.
   - type: markdown
     attributes:
-      value: "### 1. Datos do solicitante"
+      value:  "### 1. Datos do solicitante"
 
   - type: input # Campo de texto normal: nome completo.
     id: nome_completo_solicitante
@@ -22,7 +22,7 @@ body:
 
   - type: markdown  # Campo non modificable: rol.
     attributes: 
-      value: "Rol: Analista"
+      value:  "Rol: Analista"
   
   - type: input # Campo de texto normal: correo electrónico.
     id: correo_electronico_solicitante
@@ -39,7 +39,7 @@ body:
   # DESCRICIÓN E XUSTIFICACIÓN DO CAMBIO.
   - type: markdown
     attributes:
-      value: "### 2. Descrición e Xustificacion do cambio"
+      value:  "### 2. Descrición e Xustificacion do cambio"
   
   - type: textarea  # Descrición do cambio proposto.
     id: descricion_detallada_cambio
@@ -102,11 +102,11 @@ body:
 # 2. Avaliación da solicitude.
   - type: markdown
     attributes:
-      value:"# 2. AVALIACIÓN DA SOLICITUDE"   
+      value: "# 2. AVALIACIÓN DA SOLICITUDE"   
   
   - type: markdown
     attributes:
-      value:"## Análise de viabilidade técnica" 
+      value: "## Análise de viabilidade técnica" 
   # DESCRICIÓN TÉCNICA DA SOLUCIÓN
   - type: textarea
     id: descricion_tecnica
@@ -137,11 +137,11 @@ body:
   ## CUSTOS E RECURSOS
   - type: markdown
     attributes:
-      value:"## Análise de custos e recursos" 
+      value: "## Análise de custos e recursos" 
   # RECURSOS HUMANOS NECESARIOS.
   - type: markdown
     attributes:
-      value: "### 1. Recursos Humanos necesarios"
+      value:  "### 1. Recursos Humanos necesarios"
   - type: textarea
     id: perfis_implicados
     attributes: 
@@ -152,7 +152,7 @@ body:
   # RECURSOS TÉCNICOS
   - type: markdown
     attributes:
-      value: "### 2. Recursos Técnicos"
+      value:  "### 2. Recursos Técnicos"
   - type: textarea
     id: recursos_tecnicos_necesarios
     attributes: 
@@ -163,7 +163,7 @@ body:
   # ESTIMACIÓN ECONÓMICA
   - type: markdown
     attributes:
-      value: "### 3. Estimación económica"
+      value:  "### 3. Estimación económica"
   - type: input # Campo de texto normal: estimación económica
     id: custo_total_estimado
     attributes: 
@@ -173,7 +173,7 @@ body:
 # IMPACTO EN PRAZOS
   - type: markdown
     attributes:
-      value: "### 4. Impacto en prazos"
+      value:  "### 4. Impacto en prazos"
   - type: input # Campo de texto normal: duración estimada
     id: duracion_estimada
     attributes: 
@@ -191,7 +191,7 @@ body:
   ## ANÁLISE DE RISCOS
   - type: markdown
     attributes:
-      value:"## Análise de riscos" 
+      value: "## Análise de riscos" 
   - type: textarea  # Riscos asociados.
     id: riscos_asociados
     attributes:
@@ -204,12 +204,12 @@ body:
 # 3. Planificación do cambio.
   - type: markdown
     attributes:
-      value:"# 3. PLANIFICACIÓN DO CAMBIO" 
+      value: "# 3. PLANIFICACIÓN DO CAMBIO" 
 
   # RESUMO DA PLANIFICACIÓN
   - type: markdown
     attributes:
-      value:"### 1. Resumo da planificación" 
+      value: "### 1. Resumo da planificación" 
   - type: input # Campo de texto normal: data de inicio.
     id: data_inicio
     attributes: 
@@ -238,7 +238,7 @@ body:
   # OBXECTIVOS DA PLANIFICACIÓN
   - type: markdown
     attributes:
-      value:"### 2. Obxectivos da planificación" 
+      value: "### 2. Obxectivos da planificación" 
   - type: textarea
     attributes:
       label: Resultados esperados
@@ -249,7 +249,7 @@ body:
   # DESCOMPOSICIÓN EN TAREFAS
   - type: markdown
     attributes:
-      value:"### 3. Descomposición en tarefas"    
+      value: "### 3. Descomposición en tarefas"    
   - type: textarea  
     id: descomposicion_planificacion
     attributes:
@@ -262,12 +262,12 @@ body:
 # 4. Implementación do cambio.
   - type: markdown
     attributes:
-      value:"# 4. IMPLEMENTACIÓN DO CAMBIO" 
+      value: "# 4. IMPLEMENTACIÓN DO CAMBIO" 
 
     # DESCRICIÓN DA IMPLEMENTACIÓN 
   - type: markdown
     attributes:
-      value:"### 1. Descrición da implementación" 
+      value: "### 1. Descrición da implementación" 
   - type: textarea  
     id: descomposicion_implementacion
     attributes:
@@ -278,7 +278,7 @@ body:
       
   - type: markdown
     attributes:
-      value:"### 2. Datas reais e seguimento" 
+      value: "### 2. Datas reais e seguimento" 
 
   - type: input # Campo de texto normal: data de inicio.
     id: data_real_inicio
@@ -319,12 +319,12 @@ body:
 # 5. Revisión da implementación.
   - type: markdown
     attributes:
-      value:"# 5. REVISIÓN DA IMPLEMENTACIÓN"
+      value: "# 5. REVISIÓN DA IMPLEMENTACIÓN"
 
   # DATOS DAS PROBAS
   - type: markdown
     attributes:
-      value:"### 1. Datos das probas" 
+      value: "### 1. Datos das probas" 
 
   - type: textarea  
     id: probas_realizadas
@@ -337,7 +337,7 @@ body:
   # ERROS E DESVIACIONS
   - type: markdown
     attributes:
-      value:"### 2. Erros e Desviacións" 
+      value: "### 2. Erros e Desviacións" 
 
   - type: textarea  # Erros identificados
     id: erros
@@ -350,7 +350,7 @@ body:
   # CONCLUSIÓN DA REVISIÓN
   - type: markdown
     attributes:
-      value:"### 3. Conclusión da Revisión" 
+      value:  "### 3. Conclusión da Revisión" 
   - type: checkboxes
     id: aceptar_validación
     attributes:
@@ -368,7 +368,7 @@ body:
 # 6. Peche da solicitude.
   - type: markdown
     attributes:
-      value:"# 6. PECHE DA SOLICITUDE"            
+      value: "# 6. PECHE DA SOLICITUDE"            
 
   - type: checkboxes
     id: peche_cambio
@@ -381,6 +381,7 @@ body:
         - label: "A execución cumpre cos requisitos definidos"
         - label: "O problema ou necesidade inicial queda resolto"
         - label: "Interesados notificados do peche da solicitude"
+
 
 
 
