@@ -4,9 +4,7 @@ title: "[SC-XXX] - <Escribe un título descritivo>"
 labels: ["solicitude", "triage"]
 
 body:
-  ##### 
   # 1. Rexistro da solicitude.
-  #####
   - type: markdown
     attributes:
       value:"# 1️⃣ REXISTRO DA SOLICITUDE"
@@ -103,9 +101,8 @@ body:
  
 
 
-##### 
+
 # 2. Avaliación da solicitude.
-#####
   - type: markdown
     attributes:
       value:"# 2️⃣ AVALIACIÓN DA SOLICITUDE"   
@@ -207,9 +204,7 @@ body:
       required: false
 
 
-##### 
 # 3. Planificación do cambio.
-#####
   - type: markdown
     attributes:
       value:"# 3️⃣ PLANIFICACIÓN DO CAMBIO" 
@@ -267,9 +262,7 @@ body:
       required: false  
 
 
-##### 
 # 4. Implementación do cambio.
-#####
   - type: markdown
     attributes:
       value:"# 4️⃣ IMPLEMENTACIÓN DO CAMBIO" 
@@ -326,9 +319,7 @@ body:
       placeholder: 1200 €
       required: false 
 
-##### 
 # 5. Revisión da implementación.
-#####
   - type: markdown
     attributes:
       value:"# 5️⃣ REVISIÓN DA IMPLEMENTACIÓN"
@@ -377,9 +368,7 @@ body:
       placeholder: "Describa detalladamente os comentarios finais"
       required: false
   
-##### 
 # 6. Peche da solicitude.
-#####
   - type: markdown
     attributes:
       value:"# 6️⃣ PECHE DA SOLICITUDE"            
@@ -395,6 +384,7 @@ body:
         - label: "A execución cumpre cos requisitos definidos"
         - label: "O problema ou necesidade inicial queda resolto"
         - label: "Interesados notificados do peche da solicitude"
+
 
 
 
