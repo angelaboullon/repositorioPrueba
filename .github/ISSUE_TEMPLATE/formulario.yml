@@ -374,13 +374,13 @@ body:
     id: peche_cambio
     attributes:
       label: Resultado final do cambio
-      description: "Emprega estos checkbox para validar e pechar formalmente a solicitude de cambio"
       options:
         - label: "A modificación foi implementada conforme á planificación aprobada"
         - label: "Os erros relevantes detectados na revisión foron resoltos"
         - label: "A execución cumpre cos requisitos definidos"
         - label: "O problema ou necesidade inicial queda resolto"
         - label: "Interesados notificados do peche da solicitude"
+
 
 
 
