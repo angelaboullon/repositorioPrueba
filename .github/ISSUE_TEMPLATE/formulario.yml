@@ -7,7 +7,7 @@ body:
   # 1. Rexistro da solicitude.
   - type: markdown
     attributes:
-      value:"# 1️⃣ REXISTRO DA SOLICITUDE"
+      value:"# REXISTRO DA SOLICITUDE"
 
   # DATOS DO SOLICITANTE.
   - type: markdown
@@ -22,7 +22,7 @@ body:
       required: true  # Campo obligatorio. 
 
   - type: markdown  # Campo non modificable: rol.
-  attributes: 
+    attributes: 
       value: "Rol: Analista"
   
   - type: input # Campo de texto normal: correo electrónico.
@@ -384,9 +384,3 @@ body:
         - label: "A execución cumpre cos requisitos definidos"
         - label: "O problema ou necesidade inicial queda resolto"
         - label: "Interesados notificados do peche da solicitude"
-
-
-
-
-
-
