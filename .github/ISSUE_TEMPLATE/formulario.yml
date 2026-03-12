@@ -435,7 +435,4 @@ body:
         - label: "Os erros relevantes detectados na revisión foron resoltos"
         - label: "A execución cumpre cos requisitos definidos"
         - label: "O problema ou necesidade inicial queda resolto"
-
-        - label: "Interesados notificados do peche da solicitude
-
-
+        - label: "Interesados notificados do peche da solicitude"
