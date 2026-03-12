@@ -350,7 +350,7 @@ body:
   - type: textarea  
     id: recursos_empregados_efectivamente
     attributes:
-      label: Recursos empregados efectivamente: 
+      label: Recursos empregados efectivamente
       description: "Enumera o conxunto de recursos empregados durante a implementación"
       placeholder: " Recurso 1 \n Recurso 2 \n Recurso 3 \n ..."
     validations:
@@ -435,4 +435,5 @@ body:
         - label: "Os erros relevantes detectados na revisión foron resoltos"
         - label: "A execución cumpre cos requisitos definidos"
         - label: "O problema ou necesidade inicial queda resolto"
+
         - label: "Interesados notificados do peche da solicitude
