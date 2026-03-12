@@ -212,7 +212,7 @@ body:
       placeholder: Ex. 15 días
     validations:
       required: false 
-  - type: checkboxes
+  - type: radio
     id: confirmacion_duracion
     attributes:
       label: "Afecta á planificación actual?"
@@ -245,14 +245,14 @@ body:
   - type: markdown
     attributes:
       value:"### 1. Resumo da planificación" 
-  - type: input # Campo de texto normal: data de inicio.
+  - type: Date # Campo de texto normal: data de inicio.
     id: data_inicio
     attributes: 
       label: Data de inicio estimada
       placeholder: 2025-02-27
     validations:
       required: false 
-  - type: input # Campo de texto normal: data de fin.
+  - type: Date # Campo de texto normal: data de fin.
     id: data_fin
     attributes: 
       label: Data de fin estimada
@@ -323,7 +323,7 @@ body:
     attributes:
       value:"### 2. Datas reais e seguimento" 
 
-  - type: input # Campo de texto normal: data de inicio.
+  - type: Date # Campo de texto normal: data de inicio.
     id: data_real_inicio
     attributes: 
       label: Data real de inicio 
@@ -331,7 +331,7 @@ body:
     validations:
       required: false 
 
-  - type: input # Campo de texto normal: data de inicio.
+  - type: Date # Campo de texto normal: data de inicio.
     id: data_real_fin
     attributes: 
       label: Data real de fin 
@@ -436,3 +436,4 @@ body:
         - label: "A execución cumpre cos requisitos definidos"
         - label: "O problema ou necesidade inicial queda resolto"
         - label: "Interesados notificados do peche da solicitude"
+
