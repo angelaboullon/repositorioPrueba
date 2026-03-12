@@ -393,8 +393,8 @@ body:
   - type: textarea  # Erros identificados
     id: erros
     attributes:
-      label: "Erros identificados"
-      description: "Describe os erros ou desviacións atopadas durante a implementación. Indica cal é o erro, unha descrición, o grao de impacto, a decisión e o estado.
+      label: Erros identificados
+      description: "Describe os erros ou desviacións atopadas durante a implementación. Indica cal é o erro, unha descrición, o grao de impacto, a decisión e o estado."
       placeholder: "Ex.\n- Tarefa: Reasignación de rutas\n  Erro: As rutas non se reasignaron correctamente\n  Grao de impacto: Medio\n  Decisión: Acción correctiva\n  Estado: Completado"
     validations:
       required: false
@@ -437,4 +437,5 @@ body:
         - label: "O problema ou necesidade inicial queda resolto"
 
         - label: "Interesados notificados do peche da solicitude
+
 
