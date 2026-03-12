@@ -249,14 +249,14 @@ body:
     id: data_inicio
     attributes: 
       label: Data de inicio estimada
-      placeholder: 2025-02-27
+      placeholder: "2025-02-27"
     validations:
       required: false 
   - type: input # Campo de texto normal: data de fin.
     id: data_fin
     attributes: 
       label: Data de fin estimada
-      placeholder: 2025-02-28
+      placeholder: "2025-02-28"
     validations:
       required: false 
   - type: input # Campo de texto normal: custo estimado.
@@ -278,6 +278,7 @@ body:
   - type: markdown
     attributes:
       value:"### 2. Obxectivos da planificación" 
+  - type: textarea
     attributes:
       label: Resultados esperados
       description: "Describe os resultados que se esperan obter tras a planificación e implementación do cambio."
@@ -327,7 +328,7 @@ body:
     id: data_real_inicio
     attributes: 
       label: Data real de inicio 
-      placeholder: 2025-02-27
+      placeholder: "2025-02-27"
     validations:
       required: false 
 
@@ -335,7 +336,7 @@ body:
     id: data_real_fin
     attributes: 
       label: Data real de fin 
-      placeholder: 2025-03-01
+      placeholder: "2025-03-01"
     validations:
       required: false 
 
@@ -436,6 +437,7 @@ body:
         - label: "A execución cumpre cos requisitos definidos"
         - label: "O problema ou necesidade inicial queda resolto"
         - label: "Interesados notificados do peche da solicitude"
+
 
 
 
