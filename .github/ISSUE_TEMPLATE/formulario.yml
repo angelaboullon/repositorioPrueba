@@ -278,6 +278,7 @@ body:
   - type: markdown
     attributes:
       value:"### 2. Obxectivos da planificación" 
+    attributes:
       label: Resultados esperados
       description: "Describe os resultados que se esperan obter tras a planificación e implementación do cambio."
       placeholder: "Ex.\n- Todas as tarefas pendentes reasignadas correctamente\n- Notificacións automáticas enviadas aos responsables\n- Disminución de incidencias operativas"
@@ -435,5 +436,6 @@ body:
         - label: "A execución cumpre cos requisitos definidos"
         - label: "O problema ou necesidade inicial queda resolto"
         - label: "Interesados notificados do peche da solicitude"
+
 
 
