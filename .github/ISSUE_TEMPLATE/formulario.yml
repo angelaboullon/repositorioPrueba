@@ -245,14 +245,14 @@ body:
   - type: markdown
     attributes:
       value:"### 1. Resumo da planificación" 
-  - type: Date # Campo de texto normal: data de inicio.
+  - type: input # Campo de texto normal: data de inicio.
     id: data_inicio
     attributes: 
       label: Data de inicio estimada
       placeholder: 2025-02-27
     validations:
       required: false 
-  - type: Date # Campo de texto normal: data de fin.
+  - type: input # Campo de texto normal: data de fin.
     id: data_fin
     attributes: 
       label: Data de fin estimada
@@ -278,7 +278,6 @@ body:
   - type: markdown
     attributes:
       value:"### 2. Obxectivos da planificación" 
-    attributes:
       label: Resultados esperados
       description: "Describe os resultados que se esperan obter tras a planificación e implementación do cambio."
       placeholder: "Ex.\n- Todas as tarefas pendentes reasignadas correctamente\n- Notificacións automáticas enviadas aos responsables\n- Disminución de incidencias operativas"
@@ -290,7 +289,7 @@ body:
     attributes:
       value:"### 3. Descomposición en tarefas"    
   - type: textarea  
-    id: descomposicion
+    id: descomposicion_planificacion
     attributes:
       label: Descomposición en tarefas
       description: "Lista as tarefas concretas necesarias para implementar o cambio."
@@ -311,7 +310,7 @@ body:
     attributes:
       value:"### 1. Descrición da implementación" 
   - type: textarea  
-    id: descomposicion
+    id: descomposicion_implementacion
     attributes:
       label: Accións, medidas e dificultades
       description: "Indica as accións que se realizarán para implementar o cambio, as medidas adoptadas e calquera dificultade prevista"
@@ -323,7 +322,7 @@ body:
     attributes:
       value:"### 2. Datas reais e seguimento" 
 
-  - type: Date # Campo de texto normal: data de inicio.
+  - type: input # Campo de texto normal: data de inicio.
     id: data_real_inicio
     attributes: 
       label: Data real de inicio 
@@ -331,7 +330,7 @@ body:
     validations:
       required: false 
 
-  - type: Date # Campo de texto normal: data de inicio.
+  - type: input # Campo de texto normal: data de inicio.
     id: data_real_fin
     attributes: 
       label: Data real de fin 
@@ -436,4 +435,5 @@ body:
         - label: "A execución cumpre cos requisitos definidos"
         - label: "O problema ou necesidade inicial queda resolto"
         - label: "Interesados notificados do peche da solicitude"
+
 
